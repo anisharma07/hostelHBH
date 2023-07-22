@@ -1,0 +1,50 @@
+
+        <div class="end">
+
+            <div class="Toi T-B">
+                <p>Toilet-B</p>
+            </div>
+
+            <div class="row1">
+
+                <div class="room 201">
+                    <h2>201</h2>
+                </div>
+                <div class="room 202">
+                    <h2>202</h2>
+                </div>
+
+                <div class="room 203">
+                    <h2>203</h2>
+                </div>
+
+                <div class="room 204">
+                    <h2>204</h2>
+                </div>
+
+                <div class="room 205">
+                    <h2>205</h2>
+                </div>
+
+                <div class="room 206">
+                    <h2>206</h2>
+                </div>
+
+                <div class="room 207">
+                    <h2>207</h2>
+                </div>
+
+                <div class="room 208">
+                    <h2>208</h2>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="Toi T-A">
+                <p>Toilet-A</p>
+            </div>
+
+        </div>
