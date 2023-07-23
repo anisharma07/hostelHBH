@@ -71,6 +71,13 @@
 
 
 
+
+html {
+    font-family: var(--ff-nunito-sans);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--surface);
     align-items: center;
@@ -79,16 +86,21 @@ body {
     text-align: center;
 }
 
+.wrapper {
+    margin: 0 auto 0;
+}
+
+
 .himadri {
-    padding: 3px;
+    padding: 15px;
     width: 100%;
-    height: 30rem;
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: baseline;
     justify-content: space-between;
-    margin: 0 auto 0;
+    box-shadow: 0 0 5px 10px #555;
 }
 
 
@@ -103,6 +115,7 @@ body {
 }
 
 .space {
+    background-color: transparent;
     width: 5px;
     height: 30px;
 }
@@ -117,7 +130,7 @@ body {
 
     width: 95px;
     height: 30px;
-    background-color: white;
+    background-color: var(--on-surface-variant);
     display: flex;
 
     justify-content: center;
@@ -126,10 +139,10 @@ body {
 }
 
 .level {
-
+    font-weight: bold;
     width: 140px;
     height: 30px;
-    background-color: white;
+    background-color: yellow;
     display: flex;
 
     justify-content: center;
@@ -137,13 +150,26 @@ body {
 }
 
 
-@media (min-width: 401px) {
 
+@media(max-width: 329px) {
+    body {
+        font-size: xx-small;
+    }
+
+    .himadri {
+
+        width: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: baseline;
+        justify-content: space-between;
+        margin: 0 auto 0;
+    }
 
     .box {
-        width: 37px;
-        height: 30px;
-        background-color: white;
+        width: 18px;
+        height: 10px;
         display: flex;
 
         justify-content: center;
@@ -152,20 +178,18 @@ body {
 
     .space {
         width: 6px;
-        height: 30px;
+        height: 10px;
     }
 
     .empty {
-        background-color: transparent;
-        width: 37px;
-        height: 30px;
+        width: 18px;
+        height: 10px;
     }
 
     .elev {
 
-        width: 100px;
-        height: 30px;
-        background-color: white;
+        width: 54px;
+        height: 10px;
         display: flex;
 
         justify-content: center;
@@ -175,72 +199,35 @@ body {
 
     .level {
 
-        width: 148px;
-        height: 30px;
-        background-color: white;
+        width: 72px;
+        height: 10px;
         display: flex;
 
         justify-content: center;
         align-items: center;
     }
+
 }
 
+@media(min-width: 330px) {
+    body {
+        font-size: x-small;
+    }
 
-@media (min-width: 424px) {
+    .himadri {
 
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: baseline;
+        justify-content: space-between;
+        margin: 0 auto 0;
+    }
 
     .box {
-        width: 38px;
-        height: 32px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .space {
-        width: 7px;
-        height: 32px;
-    }
-
-    .empty {
-        background-color: transparent;
-        width: 38px;
-        height: 32px;
-    }
-
-    .elev {
-
-        width: 103px;
-        height: 32px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .level {
-
-        width: 152px;
-        height: 32px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 437px) {
-
-
-    .box {
-        width: 40px;
-        height: 34px;
-        background-color: white;
+        width: 28px;
+        height: 20px;
         display: flex;
 
         justify-content: center;
@@ -249,20 +236,18 @@ body {
 
     .space {
         width: 8px;
-        height: 34px;
+        height: 20px;
     }
 
     .empty {
-        background-color: transparent;
-        width: 40px;
-        height: 34px;
+        width: 28px;
+        height: 20px;
     }
 
     .elev {
 
-        width: 108px;
-        height: 34px;
-        background-color: white;
+        width: 84px;
+        height: 20px;
         display: flex;
 
         justify-content: center;
@@ -271,72 +256,39 @@ body {
     }
 
     .level {
-
-        width: 160px;
-        height: 34px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 460px) {
-
-
-    .box {
-        width: 42px;
-        height: 34px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .space {
-        width: 8px;
-        height: 34px;
-    }
-
-    .empty {
-        background-color: transparent;
-        width: 42px;
-        height: 34px;
-    }
-
-    .elev {
 
         width: 112px;
-        height: 34px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .level {
-
-        width: 164px;
-        height: 34px;
-        background-color: white;
+        height: 20px;
         display: flex;
 
         justify-content: center;
         align-items: center;
     }
+
 }
 
-@media (min-width: 480px) {
 
+
+
+@media(min-width: 437px) {
+    body {
+        font-size: small;
+    }
+
+    .himadri {
+
+        width: 380px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: baseline;
+        justify-content: space-between;
+        margin: 0 auto 0;
+    }
 
     .box {
-        width: 44px;
-        height: 34px;
-        background-color: white;
+        width: 35px;
+        height: 30px;
         display: flex;
 
         justify-content: center;
@@ -345,20 +297,18 @@ body {
 
     .space {
         width: 10px;
-        height: 34px;
+        height: 30px;
     }
 
     .empty {
-        background-color: transparent;
-        width: 44px;
-        height: 34px;
+        width: 35px;
+        height: 30px;
     }
 
     .elev {
 
-        width: 116px;
-        height: 34px;
-        background-color: white;
+        width: 105px;
+        height: 30px;
         display: flex;
 
         justify-content: center;
@@ -368,23 +318,36 @@ body {
 
     .level {
 
-        width: 175px;
-        height: 34px;
-        background-color: white;
+        width: 140px;
+        height: 30px;
         display: flex;
 
         justify-content: center;
         align-items: center;
     }
+
 }
 
-@media (min-width: 504px) {
 
+@media(min-width: 593px) {
+    body {
+        font-size: medium;
+    }
+
+    .himadri {
+
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: baseline;
+        justify-content: space-between;
+        margin: 0 auto 0;
+    }
 
     .box {
-        width: 46px;
-        height: 34px;
-        background-color: white;
+        width: 45px;
+        height: 35px;
         display: flex;
 
         justify-content: center;
@@ -392,70 +355,194 @@ body {
     }
 
     .space {
-        width: 11px;
-        height: 34px;
+        width: 15px;
+        height: 35px;
     }
 
     .empty {
-        background-color: transparent;
-        width: 46px;
-        height: 34px;
-    }
-
-    .elev {
-
-        width: 122px;
-        height: 34px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .level {
-
-        width: 183px;
-        height: 34px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-@media (min-width: 528px) {
-
-
-    .box {
-        width: 48px;
-        height: 34px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .space {
-        width: 11px;
-        height: 34px;
-    }
-
-    .empty {
-        background-color: transparent;
-        width: 48.5px;
-        height: 34px;
+        width: 45px;
+        height: 35px;
     }
 
     .elev {
 
         width: 135px;
-        height: 34px;
-        background-color: white;
+        height: 35px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .level {
+
+        width: 180px;
+        height: 35px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media(min-width: 768px) {
+    body {
+        font-size: large;
+    }
+
+    .himadri {
+
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: baseline;
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 65px;
+        height: 40px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .space {
+        width: 22px;
+        height: 40px;
+    }
+
+    .empty {
+        width: 65px;
+        height: 40px;
+    }
+
+    .elev {
+
+        width: 190px;
+        height: 40px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .level {
+
+        width: 260px;
+        height: 40px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media(min-width: 998px) {
+    body {
+        font-size: x-large;
+    }
+
+    .himadri {
+
+        width: 850px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: baseline;
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 80px;
+        height: 45px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .space {
+        width: 15px;
+        height: 45px;
+    }
+
+    .empty {
+        width: 80px;
+        height: 45px;
+    }
+
+    .elev {
+
+        width: 240px;
+        height: 45px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .level {
+
+        width: 320px;
+        height: 45px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media(min-width: 1200px) {
+
+    body {
+        font-size: larger;
+    }
+
+    .himadri {
+        width: 550px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: baseline;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .box {
+        width: 50px;
+        height: 40px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .space {
+        width: 15px;
+        height: 40px;
+    }
+
+    .empty {
+        width: 50px;
+        height: 40px;
+    }
+
+    .elev {
+
+        width: 150px;
+        height: 40px;
         display: flex;
 
         justify-content: center;
@@ -466,290 +553,27 @@ body {
     .level {
 
         width: 200px;
-        height: 34px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-@media (min-width: 558px) {
-
-
-    .box {
-        width: 54 px;
-        height: 34px;
-        background-color: white;
+        height: 40px;
         display: flex;
 
         justify-content: center;
         align-items: center;
     }
 
-    .space {
-        width: 11px;
-        height: 34px;
-    }
-
-    .empty {
-        background-color: transparent;
-        width: 52px;
-        height: 34px;
-    }
-
-    .elev {
-
-        width: 145px;
-        height: 34px;
-        background-color: white;
+    .wrapper {
         display: flex;
-
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
         justify-content: center;
-        align-items: center;
-
     }
-
-    .level {
-
-        width: 215px;
-        height: 34px;
-        background-color: white;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 570px) {
-
-    .himadri {
-        padding: 3px;
-        width: 98%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
 
 }
 
-@media (min-width: 581px) {
-
-    .himadri {
-        padding: 3px;
-        width: 96%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
+.toi {
+    background-color: skyblue;
 }
 
-@media (min-width: 593px) {
-
-    .himadri {
-        padding: 3px;
-        width: 94%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-@media (min-width: 605px) {
-
-    .himadri {
-        padding: 3px;
-        width: 92%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-@media (min-width: 618px) {
-
-    .himadri {
-        padding: 3px;
-        width: 90%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-
-    }
-}
-
-@media (min-width: 632px) {
-
-    .himadri {
-        padding: 3px;
-        width: 88%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-@media (min-width: 645px) {
-
-    .himadri {
-        padding: 3px;
-        width: 86.1%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-
-@media (min-width: 660px) {
-
-    .himadri {
-        padding: 3px;
-        width: 84.2%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-
-@media (min-width: 674px) {
-
-    .himadri {
-        padding: 3px;
-        width: 82.4%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-
-@media (min-width: 689px) {
-
-    .himadri {
-        padding: 3px;
-        width: 80.5%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-
-@media (min-width: 705px) {
-
-    .himadri {
-        padding: 3px;
-        width: 78.6%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-
-@media (min-width: 720px) {
-
-    .himadri {
-        padding: 3px;
-        width: 77%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-
-@media (min-width: 736px) {
-
-    .himadri {
-        padding: 3px;
-        width: 75.3%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
-}
-
-
-@media (min-width: 751px) {
-
-    .himadri {
-        padding: 3px;
-        width: 73.73%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: baseline;
-        justify-content: space-between;
-    }
-
-
+.stair {
+    background-color: var(--on-surface-variant-2);
 }
