@@ -109,7 +109,7 @@ body {
     height: 30px;
     background-color: lightgreen;
     display: flex;
-    border-bottom: 1px solid var(--surface);
+    border-bottom: 2px solid var(--surface);
     justify-content: center;
     align-items: center;
 }
